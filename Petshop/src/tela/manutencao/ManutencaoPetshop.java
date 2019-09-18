@@ -68,10 +68,20 @@ public class ManutencaoPetshop extends javax.swing.JDialog {
         });
 
         bntAlterar.setText("Alterar");
+        bntAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntAlterarActionPerformed(evt);
+            }
+        });
 
         bntCancelar.setText("Cancelar");
 
         bntExcluir.setText("Excluir");
+        bntExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntExcluirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -158,8 +168,16 @@ public class ManutencaoPetshop extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bntAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntAdicionarActionPerformed
-controlador.Controladorpetshop.inserir(this);        // TODO add your handling code here:
+controlador.ControladorPetshop.inserir(this);        // TODO add your handling code here:
     }//GEN-LAST:event_bntAdicionarActionPerformed
+
+    private void bntAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntAlterarActionPerformed
+controlador.ControladorPetshop.alterar(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_bntAlterarActionPerformed
+
+    private void bntExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntExcluirActionPerformed
+controlador.ControladorPetshop.excluir(this);        // TODO add your handling code here:
+    }//GEN-LAST:event_bntExcluirActionPerformed
 
     /**
      * @param args the command line arguments

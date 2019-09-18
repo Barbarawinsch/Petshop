@@ -14,6 +14,7 @@ public class Petshop {
    private int numero;
    private String endereco;
    private String nome;
+   private int codigo;
 
     public int getAvaliacao() {
         return avaliacao;
@@ -47,9 +48,19 @@ public class Petshop {
         this.nome = nome;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
     @Override
     public String toString() {
         return "Petshop{" + "nome=" + nome + '}';
     }
+
+    
     
 }
